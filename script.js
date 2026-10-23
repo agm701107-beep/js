@@ -21,10 +21,13 @@ console.log(list.sort(function(){
 e.style.width="100px";
 e.style.height="100px";
 e.style.backgroundColor=list[i];
-e.style.transform="translateX(200px)"
+e.style.transform="translateX(0px)"
+e.style.transition="transform 0.3s ease-out";
 
 f.append(e);
-
+setTimeout(function() {
+        e.style.transform = "translateX(1500px)";
+    }, 50);
 
 console.log(`${i++}`);
 }
