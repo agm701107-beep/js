@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0; /*　* -> ページ全体の編集*/
+        }
+        div{
+            height: 50vh;
+        }
+        .box1 {
+            width:60vw;
+            background-color: red;
+        }
+        .box2 {
+            width: 40vw;
+            background-color: green;
+            background-image: url(images/img.jpg);
+            background-size: cover;
+        }
+        .box3 {
+            width: 100vw;
+            background-color: blue;
+        }
+        .boxA{
+            display: flex;
+        }
+    </style>
+    <script type="module" src="js/p4.js"></script>
+</head>
+<body>
+    <div class="boxA">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="box3">
+        <h2>News</h2>
+        <ul>
+        </ul>
+    </div>
+</body>
+</html>
